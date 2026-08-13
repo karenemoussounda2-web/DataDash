@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataDash</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img
+          src="img/clear-day.svg"
+          alt="soleil"
+          width="35"
+          height="35"
+        />DataDash
+      </h1>
+      <form class="bar-rech" id="bar-rech">
+        <input
+          type="text"
+          id="recherche"
+          value="Pointe noire"
+          placeholder="Rechercher..."
+        />
+        <ion-icon name="search"></ion-icon>
+      </form>
+    </header>
+    <section class="hero">
+      <div class="historique-ville" id="historique-ville">
+        <span class="label-ville">Récent: </span>
+        <div class="recent">
+          <button id="ville-recente-1">Pointe Noire</button>
+          <button id="ville-recente-2">Paris</button>
+          <button id="ville-recente-3">Mumbai</button>
+          <button id="ville-recente-4">Los angeles</button>
+          <button id="ville-recente-5">Miami</button>
+        </div>
+      </div>
+
+      <div class="meteo-details" id="meteo-details">
+        <!-- <div class="grid"> -->
+        <div class="lieu">
+          <div class="ville" id="villeNom"><h2>Pointe Noire, Congo</h2></div>
+          <div class="date" id="villeDate">11 Aout 2026</div>
+          <div id="description-meteo">Ensoleillé</div>
+        </div>
+        <div class="temperature">
+          <div class="icon-meteo">
+            <img
+              src="img/clear-day.svg"
+              alt="meteo-icon"
+              id="meteo-cond-icon"
+              width="150"
+              height="150"
+            />
+          </div>
+          <p class="temperature-txt">
+            <span id="deg-val">0</span>
+            <span id="deg">°C</span>
+          </p>
+        </div>
+        <div class="cond-actuel">
+          <ul class="info">
+            <li>
+              <img
+                src="img/humidite.svg"
+                alt="humidité"
+                width="100"
+                height="100"
+              />
+              <span id="humidite-val">0</span>% d'humidité
+            </li>
+            <li>
+              <img src="img/vent.svg" alt="vent" width="100" height="100" />
+              <span id="vent-val">0</span> km/h de vent
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- </div> -->
+    <section class="prev">
+      <h2>Previsions sur 5 jours</h2>
+      <div id="previsions"></div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
