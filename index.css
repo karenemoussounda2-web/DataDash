@@ -84,6 +84,11 @@ form input {
   border-radius: 10px;
   background-color: var(--blanc);
 }
+.historique-ville button:hover {
+  background-color: #1b2a41;
+  color: var(--blanc);
+  cursor: pointer;
+}
 .lieu {
   display: flex;
   align-items: center;
@@ -227,6 +232,7 @@ footer {
   }
   .historique-ville button {
     font-size: 10px;
+    color: var(--muted);
   }
 
   .hero {
